@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/**font-family: 'Comfortaa', cursive;
+*/
+main .login-page .log .title h3,
+header h1{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main .login-page {
+    width: 100%;
+}
+
+/**penguin*/
+main .login-page .pinguin{
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    position: relative;
+    bottom: 0;
+    left: 75px;
+}
+
+main .login-page .pinguin .bgPinguin{
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+main .login-page .pinguin .bgPinguin .face{
+    display: inline-block;
+    position: relative;
+}
+
+main .login-page .pinguin .bgPinguin .face:before,
+main .login-page .pinguin .bgPinguin .face:after {
+    content: "";
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    width: 50px;
+    background: whitesmoke;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+main .login-page .pinguin .bgPinguin .face:before {
+    top: 15px;
+    left: 35px;
+}
+  
+main .login-page .pinguin .bgPinguin .face:after {
+    left: 65px;
+    top: 15px;
+}
+
+main .login-page .pinguin .bgPinguin .face .eyes:before,
+main .login-page .pinguin .bgPinguin .face .eyes:after{
+    content: "";
+    border-radius: 50%;
+    height: 20px;
+    position: absolute;
+    width: 30px;
+    background: black;
+    z-index: 2;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+main .login-page .pinguin .bgPinguin .face .eyes:before{
+    top: 35px;
+    left: 50px;
+}
+
+main .login-page .pinguin .bgPinguin .face .eyes:after{
+    top: 35px;
+    left: 70px;
+}
+
+main .login-page .pinguin .bgPinguin .face .eyes .light:before,
+main .login-page .pinguin .bgPinguin .face .eyes .light:after{
+    content: "";
+    border-radius: 50%;
+    height: 5px;
+    position: absolute;
+    width: 5px;
+    background: white;
+    z-index: 2;
+}
+
+main .login-page .pinguin .bgPinguin .face .eyes .light:before{
+    top: 35px;
+    left: 55px;
+}
+
+main .login-page .pinguin .bgPinguin .face .eyes .light:after{
+    top: 35px;
+    left: 90px;
+    z-index: 3;
+}
+
+main .login-page .pinguin .bgPinguin .face .tooth{
+    position: absolute;
+    display: block;
+    z-index: 3;
+    height : 0;
+    width : 0;
+    border-right : 20px solid transparent;
+    border-bottom : 40px solid orange;
+    border-left : 20px solid transparent;
+    transform: rotate(180deg);
+    top: 55px;
+    left: 55px;
+}
+
+main .login-page .pinguin .bgPinguin .face .tooth .ombre{
+    position: relative;
+    top: 37px;
+    left:-15px;
+    width: 30px;
+    height: 3px;
+    background: orangered;
+    opacity: 0.6;
+    border-top-left-radius:150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    z-index: 2;
+}
+
+main .login-page .pinguin .bras .arms{
+    position: absolute;
+    width:80px;
+    height: 25px;
+    border-radius: 60%;
+    background: black;
+    z-index: 3;
+}
+
+main .login-page .pinguin .bras .arms:first-child{
+    top: 70px;
+    left: -40px;
+    transform: rotateZ(-60deg);
+}
+
+main .login-page .pinguin .bras .arms:last-child{
+    top: 70px;
+    left: 110px;
+    transform: rotateZ(60deg);
+}
+
+main .login-page .pinguin .pied .foot{
+    position: absolute;
+    width:40px;
+    height: 20px;
+    z-index: 3;
+    background: orange;
+    border-top-left-radius:150px;
+    border-top-right-radius: 150px;
+}
+
+main .login-page .pinguin .pied .foot:first-child{
+    bottom: -2px;
+    left:30px;
+}
+
+main .login-page .pinguin .pied .foot:last-child{
+    bottom: -2px;
+    left:80px;
+}
+
+/**formulaire*/
+
+main .login-page .log{
+    width: 300px;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    border-radius: 4px;
+    background: whitesmoke;
+}
+
+main .login-page .log form {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+}
+
+main .login-page .log form input {
+    font-size: 20px;
+    margin: 10px 10px 0 10px;
+    width: 90%;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+main .login-page .log form label {
+    position: absolute;
+    left: 50px;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+main .login-page .log form #email{
+    top: 250px;
+}
+
+main .login-page .log form #pw{
+    top: 300px;
+}
+
+main .login-page .log form input:focus~label,
+main .login-page .log form input:valid~label {
+    transform: translateY(-10px);
+    font-size: 10px;
+    color: lightseagreen;
+    font-weight: 600;
+}
+
+main .login-page .log form div,
+main .login-page .log form div{
+    width: 90%;
+    border: 2px solid lightseagreen;
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+main .login-page .log .save{
+    display: inline-block;
+    position:absolute;
+    top:330px;
+    left: 50px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+main .login-page .log .save label{
+    font-size: 12px;
+}
+
+main .login-page .log .btn{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+}
+
+main .login-page .log button {
+    height: 15%;
+    width: 30%;
+    text-align: center;
+    color: lightseagreen;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+main .login-page .log button:hover{
+    color: white;
+    background: lightseagreen;
+}
+
+main .login-page .log .social ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .login-page .log .social ul li{
+    display: inline-block;
+    margin: 10px 10px 0px 10px;
+}
+
+main .login-page .log .social ul li a{
+    text-align: center;
+    justify-content: center;
+}
+
+main .login-page .log .social ul li a i{
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    color: cadetblue;
+    font-size: 2em;
+}

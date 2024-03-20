@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:black;
+}
+
+.shapeBack {
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.shapeBack .shape{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.shapeBack .shape:first-child {
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+
+.shapeBack .shape:last-child {
+    background: linear-gradient( to right,
+        #e95713,
+        #da3620
+    );
+    right: -100px;
+    bottom: -100px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 550px;
+    width: 350px;
+    padding: 20px;
+}
+
+.card h2{
+    color: whitesmoke;
+    font-family: pacifico, cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.card {
+    border: 0.5px solid darkseagreen;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+.card:hover {
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-out 0.5s;
+}
+
+.card form label,
+.card form input {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 10px;
+
+}
+
+.card form input{
+    border-radius: 20px;
+    color: black;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px;
+}
+
+.card form label {
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+.card form .option a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.card form .option a:hover {
+    color: darkseagreen;
+}
+
+.card .btn-go a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    margin: 30px 0;
+}
+
+.card .btn-go a div{
+    width: 20px;
+    height: 10px;
+    border-radius: 20px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .btn-go a div:first-child {
+    transform: rotate(150deg) translateX(-9px) translateY(-5px);
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+}
+
+.card .btn-go a div:last-child {
+    transform: rotate(-150deg) translateY(10px) translateX(-6px);
+    background: linear-gradient( to right,
+        #e95713,
+        #da3620
+    );
+}
+
+.card .baton {
+    width: 70%;
+    height: 2px;
+    background: #ffffff;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .social {
+    display: block;
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .social ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .social ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.card .social ul li a {
+    font-size: 2em;
+    color: #ffffff;
+}
